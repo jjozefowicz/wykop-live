@@ -1,0 +1,3 @@
+[submodule "libs/wykop"]
+	path = libs/wykop
+	url = https://github.com/spenalzo/wykop.git
