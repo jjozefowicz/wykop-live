@@ -8,16 +8,14 @@ var emitter = new events.EventEmitter();
 var wykop = require('./libs/wykop/lib/wykop');
 
 var options = {
-    appKey: '',
-    secret: ''
+    appKey: 'asdasdasd',
+    secret: 'asdasdas'
 };
 var client = wykop.createClient(options);
 
-client.on('event_stream', function(item) {
-console.log(item);
-//process.exit();
-    socket.emit('stream', item);
-});
+//client.on('event_stream', function(item) {
+//    socket.emit('stream', item);
+//});
 
 // Proxy staticfiles
 server.use(express.static(__dirname + '/public'));
